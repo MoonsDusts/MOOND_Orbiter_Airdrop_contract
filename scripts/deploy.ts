@@ -3,7 +3,7 @@ import { ethers } from "hardhat";
 import points from "../args/points.json";
 
 async function main() {
-  const airdrop = await ethers.deployContract("Airdrop", ['0x216864D65BBBe2BcFA6B10Eb60cb1820D3DBFaB2']);
+  const airdrop = await ethers.deployContract("Airdrop", ['0x4b2576BC44310D6dfb4cfCf2630f25190fc60803']);
 
   await airdrop.waitForDeployment();
 
